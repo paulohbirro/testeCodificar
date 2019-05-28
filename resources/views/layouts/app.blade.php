@@ -108,7 +108,7 @@
     }
 
 
-    function showResults(address) {
+    function showResults(senador) {
 
 
         document.getElementById('results').innerHTML = "";
@@ -116,7 +116,7 @@
         // Mostra a div com o resultado
         document.getElementById('results').style.display = 'block'
 
-        if (address.length <= 0) {
+        if (senador.length <= 0) {
             document.getElementById('results').innerHTML = `
 
             <div class="alert alert-danger" role="alert">
@@ -125,7 +125,7 @@
                 `;
         } else {
 
-            for (let i = 0; i < address.length; i++) {
+            for (let i = 0; i < senador.length; i++) {
 
                 // Mostra os resultados:
                 document.getElementById('results').innerHTML += `
@@ -133,17 +133,17 @@
 
 <div class="card mb-md-4">
   <div class="card-header">
-    ${address[i]['nomeParlamentar']}
+    ${senador[i]['nomeParlamentar']}
   </div>
   <div class="card-body">
 
 <div class="row pb-3 align-items-center">
 
-            <div class="col-md-6"><img class="img-fluid" width="100px" src="${address[i]['fotoURL']}" alt="">
-            <p class="pt-2"> <b>Número: </b> ${address[i]['numero']}</p> </div>
+            <div class="col-md-6"><img class="img-fluid" width="100px" src="${senador[i]['fotoURL']}" alt="">
+            <p class="pt-2"> <b>Número: </b> ${senador[i]['numero']}</p> </div>
 
 
-             <div class="col-md-6 text-danger"><h2><b>R$ </b> ${numeroParaMoeda(address[i]['total'])} </h2></div>
+             <div class="col-md-6 text-danger"><h2><b>R$ </b> ${numeroParaMoeda(senador[i]['total'])} </h2></div>
 
  </div>
 </div>
