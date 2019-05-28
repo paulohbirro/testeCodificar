@@ -8,8 +8,8 @@ http://meucongressonacional.com/api/001/senador
 http://meucongressonacional.com/api/001/senador/4981/gastos/2013
 
 ## Configurando Ambiente
-# 1 crie um banco no mysql
-# 2 composer install
-# 3 entre no arquivo .ENV e insira o nome do banco.
-# 4 Entre no terminal e execute # php artisan db:seed
+### 1 crie um banco no mysql
+### 2 composer install
+### 3 entre no arquivo .ENV e insira o nome do banco.
+### 4 Entre no terminal e execute # php artisan db:seed
 
